@@ -237,7 +237,9 @@ void init_stuff (int argc, char *argv[])
   if (!can_xinput)
     gtk_widget_set_sensitive(GET_COMPONENT("optionsUseXInput"), FALSE);
 
-  ui.use_xinput = ui.allow_xinput && can_xinput;
+  // Turned off by default to ensure that pointer devices inserted after startup are available
+  // ui.use_xinput = ui.allow_xinput && can_xinput;
+  ui.use_xinput = FALSE;
 
   gtk_check_menu_item_set_active(
     GTK_CHECK_MENU_ITEM(GET_COMPONENT("optionsProgressiveBG")), ui.progressive_bg);

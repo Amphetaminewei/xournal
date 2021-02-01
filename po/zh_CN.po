@@ -1306,3 +1306,7 @@ msgstr "更改保存为 '%s'"
 msgid "Untitled"
 msgstr "未使用"
 
+#: ../src/xo-callbacks.c:2963
+#, c-format
+msgid "Make sure that the painting device you want to use is already available within the program before you turn this option on.\nIf you can't draw with a new device when you turn this option on, you can try turning it off and turning it back on after taps on the canvas with the new device."
+msgstr "请确保您希望使用的绘画设备在打开此选项前已经可以在程序内使用。\n如打开此选项后无法使用新设备绘制，可以尝试关闭此选项，使用新设备在画布范围内轻点后重新打开此项。"

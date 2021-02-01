@@ -2953,6 +2953,22 @@ on_optionsUseXInput_activate           (GtkMenuItem     *menuitem,
   ui.allow_xinput = ui.use_xinput =
     gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM (menuitem));
 
+if (ui.allow_xinput) {
+  GtkWidget *dialog;
+  dialog = gtk_message_dialog_new(GTK_WINDOW (winMain),
+                                  GTK_DIALOG_DESTROY_WITH_PARENT,
+                                  GTK_MESSAGE_INFO,
+                                  GTK_BUTTONS_OK,
+                                  _("Make sure that the painting device you want to use is already available "
+                                    "within the program before you turn this option on.\n"
+                                    "If you can't draw with a new device when you turn this option on, you can try turning it off "
+                                    "and turning it back on after taps on the canvas with the new device."),
+                                  "title");
+  gtk_window_set_title(GTK_WINDOW(dialog), _("Xournal"));
+  gtk_dialog_run(GTK_DIALOG(dialog));
+  gtk_widget_destroy(dialog);
+}
+
 /* HOW THINGS USED TO BE:
 
    We'd like on_canvas_... to get BOTH core and xinput events. Up to
