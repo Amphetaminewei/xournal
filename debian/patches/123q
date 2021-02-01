@@ -1,0 +1,39 @@
+
+qX
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ xournal (1:0.4.8.2016-5) unstable; urgency=medium
+ .
+   * bump policy
+   * delete mimelnk harder (closes: #875523)
+Author: Barak A. Pearlmutter <bap@debian.org>
+Bug-Debian: https://bugs.debian.org/875523
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2020-12-03
+
+--- xournal-0.4.8.2016.orig/src/xo-interface.c
++++ xournal-0.4.8.2016/src/xo-interface.c
+@@ -647,6 +647,7 @@ create_winMain (void)
+                               GDK_Right, (GdkModifierType) GDK_CONTROL_MASK,
+                               GTK_ACCEL_VISIBLE);
+ 
++
+   image628 = gtk_image_new_from_stock ("gtk-go-forward", GTK_ICON_SIZE_MENU);
+   gtk_widget_show (image628);
+   gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (viewNextPage), image628);
