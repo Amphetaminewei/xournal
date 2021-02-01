@@ -1,8 +1,14 @@
+xournal (1:0.4.8.2021-02) v101; urgency=medium
+
+  * 默认关闭xinput扩展事件，解决不能使用启动后插入的设备的问题
+
+ -- wangweinan <wangweinan@Kylinos.cn>  Mon, 01 Feb 2021 16:59:08 +0800
+
 xournal (1:0.4.8.2021-01) v101; urgency=medium
 
   * 汉化title
 
- -- wangweinan <wangweinan@Kylinos.cn>  Thu, 28 Jan 2020 16:59:08 +0800
+ -- wangweinan <wangweinan@Kylinos.cn>  Thu, 28 Jan 2021 16:59:08 +0800
 
 xournal (1:0.4.8.2020-12) v101; urgency=medium
 
