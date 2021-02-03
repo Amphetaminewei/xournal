@@ -1222,7 +1222,7 @@ create_winMain (void)
   gtk_menu_item_set_submenu (GTK_MENU_ITEM (menuOptions), menuOptions_menu);
 
   optionsUseXInput = gtk_check_menu_item_new_with_mnemonic (_("Use _XInput"));
-  gtk_widget_show (optionsUseXInput);
+  // gtk_widget_show (optionsUseXInput);
   gtk_container_add (GTK_CONTAINER (menuOptions_menu), optionsUseXInput);
 
   pen_and_touch = gtk_menu_item_new_with_mnemonic (_("_Pen and Touch"));
@@ -1233,11 +1233,11 @@ create_winMain (void)
   gtk_menu_item_set_submenu (GTK_MENU_ITEM (pen_and_touch), pen_and_touch_menu);
 
   optionsButtonMappings = gtk_check_menu_item_new_with_mnemonic (_("_Eraser Tip"));
-  gtk_widget_show (optionsButtonMappings);
+  // gtk_widget_show (optionsButtonMappings);
   gtk_container_add (GTK_CONTAINER (pen_and_touch_menu), optionsButtonMappings);
 
   optionsPressureSensitive = gtk_check_menu_item_new_with_mnemonic (_("_Pressure sensitivity"));
-  gtk_widget_show (optionsPressureSensitive);
+  // gtk_widget_show (optionsPressureSensitive);
   gtk_container_add (GTK_CONTAINER (pen_and_touch_menu), optionsPressureSensitive);
 
   optionsButtonSwitchMapping = gtk_check_menu_item_new_with_mnemonic (_("Buttons Switch Mappings"));
