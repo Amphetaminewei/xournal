@@ -1,3 +1,9 @@
+xournal (1:0.4.8.2021-02.2) v101; urgency=medium
+
+  * desktop文件中文翻译
+
+ -- wangweinan <wangweinan@Kylinos.cn>  Thu, 04 Feb 2021 16:59:08 +0800
+
 xournal (1:0.4.8.2021-02.1) v101; urgency=medium
 
   * 默认关闭xinput扩展事件并隐藏开关，解决不能使用启动后插入的设备的问题
