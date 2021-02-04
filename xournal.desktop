@@ -8,6 +8,8 @@ Name[fr]=Xournal
 Comment[fr]=Prise de notes manuscrites
 Name[ca]=Xournal
 Comment[ca]=Preneu notes a mà
+Name[zh_CN]=手写笔记
+Comment[zh_CN]=手写笔记本工具
 
 Exec=xournal %f
 Terminal=false
